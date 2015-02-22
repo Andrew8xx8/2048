@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>2048</title>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="lodash.js"></script>
+    <script src="game.js"></script>
+    <style>
+      body {
+        background: #faf8ef;
+        color: #776e65;
+        font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+        font-size: 18px;
+      }
+
+      table {
+        background: #bbada0;
+        border-radius: 4px;
+        border-spacing: 13px;
+        margin: 0 auto;
+      }
+
+      td {
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 34px;
+      }
+
+      .board-0 {
+        background: rgba(238, 228, 218, 0.35);
+      }
+
+      .board-2 {
+        background: #eee4da;
+        color:
+      }
+      .board-4 {
+        background: #ede0c8;
+      }
+      .board-8 {
+        color: #f9f6f2;
+        background: #f2b179; }
+      .board-16 {
+        color: #f9f6f2;
+        background: #f59563; }
+      .board-32 {
+        color: #f9f6f2;
+        background: #f67c5f; }
+      .board-64 {
+        color: #f9f6f2;
+        background: #f65e3b; }
+      .board-128 {
+        color: #f9f6f2;
+        background: #edcf72;
+        font-size: 35px; }
+      @media screen and (max-width: 520px) {
+        board-128 {
+          font-size: 15px; } }
+      .board-256 {
+        color: #f9f6f2;
+        background: #edcc61;
+        font-size: 35px; }
+      @media screen and (max-width: 520px) {
+        .board-256 {
+          font-size: 15px; } }
+      .board-512 {
+        color: #f9f6f2;
+        background: #edc850;
+        font-size: 35px; }
+      @media screen and (max-width: 520px) {
+        .board-512 {
+          font-size: 15px; } }
+      .board-1024 {
+        color: #f9f6f2;
+        background: #edc53f;
+        font-size: 25px; }
+      @media screen and (max-width: 520px) {
+        .board-1024 {
+          font-size: 15px; } }
+      .board-2048 {
+        color: #f9f6f2;
+        background: #edc22e;
+        font-size: 25px; }
+      @media screen and (max-width: 520px) {
+        .board-2048 {
+          font-size: 15px; } }
+    </style>
+  </head>
+  <body>
+    <div id="game">&nbsp;</div>
+  </body>
+</html>
